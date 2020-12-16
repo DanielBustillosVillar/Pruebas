@@ -1,0 +1,300 @@
+/* font-family: 'Fjalla One', sans-serif;
+font-family: 'Source Sans Pro', sans-serif; */
+/* Generales */
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Fjalla One', sans-serif;
+}
+h1{
+    line-height: 1.5em;
+    font-size: 40px;
+    font-weight: normal;
+    letter-spacing: -.2px;
+    text-transform: capitalize;
+    color: white;
+    margin: 0;
+}
+h2{
+    margin: 0;
+    padding: 30px 0;
+    text-transform: uppercase;
+    color: #005086;
+    font-weight: bold;
+    font-size: 25px;
+}
+/* Header */
+.header{
+    background-color: #23265B;
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    align-items: center;
+    
+}
+.header figure{
+    margin: 0 0 0 20px;
+    width: 100px;
+    height: 80px;
+}
+.header figure img{
+    width: inherit;
+    height: inherit;
+}
+.menu{
+    height: inherit;
+}
+/* Links */
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: inherit;
+}
+li{
+    height: inherit;
+}
+.link{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    height: inherit;
+    align-items: center;
+    margin: 0px 20px;
+    padding: 0 10px;
+}
+
+/* Section main */
+.main{
+    height: 300px;
+    background-color: #8675a9;
+    /* background-image: url(../img/formulario.jpg);
+    background-size: 500px 300px;
+    background-repeat: no-repeat;
+    background-position-x: right; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main figure{
+    margin: 0;
+    width: 500px;
+    height: inherit;
+}
+.main img{
+    width: inherit;
+    height: inherit;
+    box-sizing: border-box;/*No nos afecta el pixelado*/
+}
+.main span{
+    color: #005086;
+}
+/* Proyectos */
+.project{
+    /* border: solid 2px rgb(14, 212, 104); */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(68, 66, 66);
+    margin-bottom: 40px;
+    padding: 30px;
+    margin: 0 0 30px 0 ;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.projects{
+    padding: 0 30px 10px;
+    background-color: #744BC525;
+}
+.project-title{
+    margin-top: 0;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.project-language{
+    margin-top: 15px;
+}
+.project-date{
+    margin-top: 20px;
+}
+.project-link{
+    margin-top: 20px;
+}
+.project-link a{
+    text-decoration: none;
+    color: black;
+}
+.project-description{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.project-left{
+    width: 500px;
+}
+.project-container_image{
+    width: 500px;
+    box-sizing: border-box;/*Para que los margenes no nos afecten*/
+}
+.project-image{
+    width: inherit;
+}
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+    justify-content: space-between;
+}
+.box{
+    width: 50px;
+    height: 50px;
+    border: solid 2px red;
+    margin: 10px;
+}
+/* Experiencias */
+.experiences{
+    padding: 0px 30px;
+    display: flex;
+    flex-wrap: wrap; /*Para que se vaya para abajo*/
+    justify-content: space-around;
+}  
+.experience{/* 
+    border: solid 1px red; */
+    margin: 0 20px 40px 0;
+    width: 480px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0; /* Para que tengan su mismo tamaño */
+    background-color: #f4fbff;
+} 
+.experience-container_image{
+    margin: 0;
+    width: inherit;
+    height: 200px;
+}
+.experience-image{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+.experience-down{
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+.experience-title{
+    margin: 0;
+}
+.experience-description{
+    text-align: left;
+}
+.button{
+    border: 1px solid #005086;
+    padding: 10px 25px;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #005086;
+}
+.experience-mainTitle{
+    margin-left: 30px;
+}
+/* Contacto */
+.contact{
+    display: flex;
+    background-color: rgb(9, 172, 96);
+    padding: 30px 30px 30px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-form{
+    margin-left: 30px;
+}
+.contact-form input{
+    border-color: gray;
+    border-style: solid;
+    padding: 5px 5px 5px 30px;
+    border-radius: 5px;
+    background-image: url(../img/email.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position-y: center;
+    background-position-x: 3px;
+    outline: none;
+    margin-top: 20px;
+}
+.contact-form button{
+    display: block;
+    border: 1px solid white;
+    padding: 5px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    color: rgb(9, 172, 96);
+    font-family: 'Fjalla One', sans-serif;
+    border-radius: 5px;
+    margin: 13px 0;
+}
+.contact-form h2{
+    padding: 0;
+}
+/* Redes */
+.redes{
+    display: flex;
+    align-items: center;
+}
+.redes-link{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+.redes-link:last-of-type{
+    margin: 0 100px 0 0;
+}
+.redes-link.github{
+    background-image: url(../img/github.svg);
+    background-size: 50px 50px;
+}
+.redes-link.facebook{
+    background-image: url(../img/facebook.svg);
+    background-size: 50px 50px;
+}
+.redes-link.instagram{
+    background-image: url(../img/instagram.svg);
+    background-size: 50px 50px;
+}
+.redes-link.twitter{
+    background-image: url(../img/twitter.svg);
+    background-size: 50px 50px;
+}
+/* Footer */
+.footer{
+    background-color: #23265B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+    font-family: 'Fjalla One', sans-serif;
+}
+.footer-details{
+    display: flex;
+    align-items: center;
+}
+.footer-details img{
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+}
+.wrapper{
+    margin: 0 auto;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    height: inherit;
+    width: 1000px;
+    flex-wrap: inherit;
+}
